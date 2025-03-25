@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            <h1>TODO List</h1>
+          </span>
+        </div>
+      </nav>
+      <div class="mb-3">
+        <h3><label for="todo_title" class="form-label">Title</label></h3>
+        <input type="text" class="form-control" id="todo_title" placeholder="Practice Python Interview">
+      </div>
+      <div class="mb-3">
+        <h3><label for="todo_desc" class="form-label">Description</label></h3>
+        <textarea class="form-control" id="todo_desc" placeholder="Practice from Interview bit, chatgpt etc." rows="3"></textarea>
+      </div>
+      <div class="button">
+        <button onclick="addTask()" type="button" class="btn btn-success">Submit</button>
+      </div>
+      <div class="todo_list">
+        <center>
+            List Of Work To Do
+        </center>
+      </div>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Date and Time</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+      </table>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </body>
+</html>

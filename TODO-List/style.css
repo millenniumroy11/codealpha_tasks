@@ -1,0 +1,11 @@
+.todo_list{
+    background-color: rgba(41, 176, 18, 0.288);
+    font-size: 30px;
+    font-variant: small-caps;   
+}
+
+.button {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
